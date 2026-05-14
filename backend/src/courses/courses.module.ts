@@ -7,7 +7,7 @@ import { Course, CourseSchema } from './schemas/course.schema';
 @Module({
   imports: [
     // This connects the blueprint to the actual database collection
-    MongooseModule.forFeature([{ name: Course.name, schema: CourseSchema }])
+    MongooseModule.forFeature([{ name: Course.name, schema: CourseSchema }]),
   ],
   controllers: [CoursesController],
   providers: [CoursesService],
