@@ -11,8 +11,14 @@ export class Course {
   @Prop()
   description!: string;
 
+  @Prop()
+  level!: string;
+
   @Prop({ default: 0 })
   progress!: number;
+
+  @Prop({ type: [String], default: [] })
+  enrolledStudents!: string[];
 }
 
 export const CourseSchema = SchemaFactory.createForClass(Course);
