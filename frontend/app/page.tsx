@@ -97,6 +97,11 @@ export default function LMSPage() {
               Teacher Dashboard
             </button>
           </div>
+
+          <div className="flex items-center gap-4">
+            <a href="/auth/login" className="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors">Log In</a>
+            <a href="/auth/register" className="px-5 py-2 bg-slate-900 text-white text-sm font-bold rounded-xl hover:bg-slate-800 transition-all shadow-lg shadow-slate-200">Sign Up</a>
+          </div>
         </div>
       </nav>
 
